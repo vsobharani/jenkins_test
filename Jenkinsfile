@@ -8,8 +8,10 @@ pipeline {
 	stages {
 		stage('BUILD') {
 			steps {
-				if (params.DEPLOY) {
-					echo "true: $RUN_TESTS"
+				step {
+					if (params.DEPLOY) {
+						echo "true: $RUN_TESTS"
+					}
 				}
 			}
 		}
