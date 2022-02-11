@@ -10,7 +10,7 @@ pipeline {
 			steps {
 				script {
 					if (params.DEPLOY) {
-						echo "true: $RUN_TESTS"
+						echo "true: $DEPLOY"
 					}
 				}
 			}
